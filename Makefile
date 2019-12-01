@@ -5,7 +5,9 @@ CFLAGS = -g -Wall -o
 
 OBJS = tgetopt_long.o \
        mychmod.o \
-       mycreate.o
+       mycreate.o \
+       myread.o \
+       mywrl.o
 
 all : $(OBJS)
 
@@ -13,4 +15,4 @@ all : $(OBJS)
 	$(CC) $(CFLAGS) $@ $<
 
 clean:
-	rm -rf *.o* *.txt
+	rm -rf *.o*
