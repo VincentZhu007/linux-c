@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
 
 	path = argv[1];
 	
-	//if ((fd == open(path, O_CREAT | O_EXCL, S_IRUSR | S_IWUSR)) == -1) {
-	if ((fd == creat(path, S_IRUSR | S_IWUSR)) == -1) {
+	if ((fd = open(path, O_CREAT | O_EXCL, S_IRUSR | S_IWUSR)) == -1) {
+	//if ((fd = creat(path, S_IRUSR | S_IWUSR)) == -1) {
 		perror("open");
 		exit(1);
 	}
