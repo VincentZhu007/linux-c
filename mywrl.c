@@ -72,7 +72,13 @@ int main(int argc, char *argv[])
 	}
 
 	path = argv[1];
-	
+
+	/*
+	 * 此处不能使用creat创建文件，因为creat(fd, mode)等效于
+	 * open(fd, O_CREAT | O_WRONLY | O_TRUNC, mode)
+	 * 不能对fd进行读操作。
+	 */
+	//if ((fd = creat(path, S_IRUSR | S_IWUSR)) == -1) {	
 	if ((fd = open(path, O_CREAT | O_TRUNC | O_RDWR, S_IRUSR | S_IWUSR)) == -1) {
 		MYERR("open", __LINE__);
 	}
