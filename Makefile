@@ -7,7 +7,8 @@ OBJS = tgetopt_long.o \
        mychmod.o \
        mycreate.o \
        myread.o \
-       mywrl.o
+       mywrl.o \
+       fcntl_access.o 
 
 all : $(OBJS)
 
