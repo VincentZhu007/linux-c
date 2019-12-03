@@ -8,7 +8,8 @@ OBJS = tgetopt_long.o \
        mycreate.o \
        myread.o \
        mywrl.o \
-       fcntl_access.o 
+       fcntl_access.o \
+       fcntl_lock.o 
 
 all : $(OBJS)
 
