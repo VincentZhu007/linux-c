@@ -13,7 +13,8 @@ OBJS = tgetopt_long.o \
        ioctl_net.o \
        getinfo.o \
        t_umask.o \
-       t_unlink.o 
+       t_unlink.o \
+       mycd.o 
 
 all : $(OBJS)
 
