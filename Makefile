@@ -12,7 +12,8 @@ OBJS = tgetopt_long.o \
        fcntl_lock.o \
        ioctl_net.o \
        getinfo.o \
-       t_umask.o 
+       t_umask.o \
+       t_unlink.o 
 
 all : $(OBJS)
 
