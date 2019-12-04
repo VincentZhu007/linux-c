@@ -12,5 +12,6 @@
 	* stat
 	* umask
 	* unlink
+	* opendir/readdir/closedir
 
 

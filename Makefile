@@ -14,7 +14,8 @@ OBJS = tgetopt_long.o \
        getinfo.o \
        t_umask.o \
        t_unlink.o \
-       mycd.o 
+       mycd.o \
+       show_files.o 
 
 all : $(OBJS)
 
