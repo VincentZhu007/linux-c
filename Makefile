@@ -10,7 +10,8 @@ OBJS = tgetopt_long.o \
        mywrl.o \
        fcntl_access.o \
        fcntl_lock.o \
-       ioctl_net.o 
+       ioctl_net.o \
+       getinfo.o 
 
 all : $(OBJS)
 
