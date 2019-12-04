@@ -6,6 +6,10 @@
 
 * mychmod
 * open, close, read, write, create , lseek
-
+* fcntl
+* ioctl
+* file
+	* stat
+	* umask
 
 

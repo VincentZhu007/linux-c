@@ -11,7 +11,8 @@ OBJS = tgetopt_long.o \
        fcntl_access.o \
        fcntl_lock.o \
        ioctl_net.o \
-       getinfo.o 
+       getinfo.o \
+       t_umask.o 
 
 all : $(OBJS)
 
@@ -19,4 +20,4 @@ all : $(OBJS)
 	$(CC) $(CFLAGS) $@ $<
 
 clean:
-	rm -rf *.o*
+	rm -rf *.o* *.txt
