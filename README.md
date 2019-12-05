@@ -13,5 +13,6 @@
 	* umask
 	* unlink
 	* opendir/readdir/closedir
+	* my ls (practice)
 
 
