@@ -5,6 +5,12 @@
  * created on 12/4/2019.
  */
 
+/*
+ * TODO:
+ * (1) 对输出的文件进行排序
+ * (2) 文件附加权限需要分情况处理set-uid,set-gid
+ * (3) 输出不够美观，需要对最长的inode个数和文件大小的显示位数进行统计
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
