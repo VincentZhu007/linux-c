@@ -18,7 +18,8 @@ OBJS = tgetopt_long.o \
        show_files.o \
        myls.o \
        t_fork.o \
-       t_fork2.o
+       t_fork2.o \
+       t_fork3.o
 
 all : $(OBJS)
 
