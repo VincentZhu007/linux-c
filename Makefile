@@ -19,7 +19,8 @@ OBJS = tgetopt_long.o \
        myls.o \
        t_fork.o \
        t_fork2.o \
-       t_fork3.o
+       t_fork3.o \
+       t_fork4.o
 
 all : $(OBJS)
 
