@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	printf("device is: %d\n", (int)buf.st_dev);
 	printf("inode is: %d\n", (int)buf.st_ino);
 	printf("mode is: %o\n", buf.st_mode);
-	printf("number of hard links is: %d\n", buf.st_nlink);
+	printf("number of hard links is: %d\n", (int)buf.st_nlink);
 	printf("user ID of owner is: %d\n", buf.st_uid);
 	printf("group ID of owner is: %d\n", buf.st_gid);
 	printf("device type (if inode device) is: %d\n", (int)buf.st_rdev);
